@@ -1,0 +1,16 @@
+estrae senza audio
+
+ffmpeg -i input.mp4 -vf "trim=start=2:end=5" -an output.mp4
+
+2 e 5 sono minuti
+
+
+
+
+
+ricopia senza audio between
+
+qua sono secondi
+
+
+ffmpeg -i input.mp4 -af "volume=enable='between(t,51*60,52*60)':volume=0" -c:v copy output.mp4
