@@ -1,0 +1,1 @@
+.\ffmpeg.exe -i .\Video_by_andreac.mp4  -c:v libx264 -preset fast -crf 28  -movflags +faststart output_file.mp4
